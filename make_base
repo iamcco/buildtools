@@ -167,6 +167,8 @@ else
         HOST_ARCH := x86_64
     else ifeq ($(UNAME_M),$(filter $(UNAME_M),i386 i686))
         HOST_ARCH := i686
+    else ifeq ($(UNAME_M),arm64)
+        HOST_ARCH := arm64
     else
         $(error "Unsupported host architecture.")
     endif
