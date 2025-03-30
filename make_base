@@ -386,7 +386,7 @@ else ifeq ($(TARGET_OS),3ds)
     endif
 
     LD_FLAGS += -specs=3dsx.specs
-    COMMON_CC_FLAGS += -mword-relocations -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -DARM11 -D_3DS
+    COMMON_CC_FLAGS += -mword-relocations -ffast-math -march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -D__3DS__
 
     SERVEFILES := python $(BUILDTOOLS_DIR)/3ds/servefiles.py
 
